@@ -285,14 +285,14 @@ EOD;                        // closing 'EOD' must be on it's own line, and to th
 
 ### Which is quicker? 
 
-There is a myth floating around that single quote strings are fractionally quicker than double quote strings. This 
+There is a myth floating around that single quote strings are fractionally quicker than double quote strings. This
 is fundamentally not true.
 
-If you are defining a single string and not trying to concatenate values or anything complicated, then either a single or 
+If you are defining a single string and not trying to concatenate values or anything complicated, then either a single or
 double quoted string will be entirely identical. Neither are quicker.
 
 If you are concatenating multiple strings of any type, or interpolate values into a double quoted string, then the results can
-vary. If you are working with a small number of values, concatenation is minutely fasture. With a lot of values, interpolating 
+vary. If you are working with a small number of values, concatenation is minutely faster. With a lot of values, interpolating
 is minutely faster.
 
 Regardless of what you are doing with strings, none of the types will ever have any noticable impact on your application.
